@@ -1,33 +1,37 @@
-Initiate a git repo
+#install git 
+
+apt install git -y
+
+#Initiate a git repo
 
 git init
 
-Note : create some files and add some content in that 
+###Note : create some files and add some content in that 
 
-Check every step using
+#Check every step using
 
 git status 
 
-Add the code to git
+#Add the code to git
 
 git add .
 
-Commit the code to git (staging area)
+#Commit the code to git (staging area)
 
-Format: git commit -m “<a message summarises your commit>”
+#Format: git commit -m “<a message summarises your commit>”
 
 eg: git commit -m “adding some files”
 
-If error comes :
+#If error comes :
 
 git config user.email <email>
 git confer user.name <name>
 
 
-Push the code
+#Push the code
 git push origin master
 
-Error comes
+##Error comes
 
 1. Check the branch name 
 
@@ -35,7 +39,41 @@ Error comes
 
 git remote -v
 
-if there is no repository as origin 
+#if there is no repository as origin 
 
 git remote add origin <url of the remote repository >
+
+#usage of .gitignore - add the file name to .gitignore file
+
+eg: echo "firstfile.txt" > .gitignore
+
+#stash commands
+
+
+git stash  #placing the tracked files in stash
+git stash -u #placing the untracked and tracked files in stash
+
+git stash pop #Takes the files in a stash, places them back into the development workspace and deletes the stash from history
+git stash pop <stash id> #Takes the files in a specific stash id, places them back into the development workspace and deletes the stash from history
+
+
+git stash list #Displays the stash history in chronological order; and
+
+
+git stash clear: Removes all entries in the git stash history.
+
+#checking the log
+
+git log
+
+#checking the log (shorter version)
+
+git log --oneline
+
+#change last commit message
+
+git commit --amend -m "an updated commit message"
+
+
+
 

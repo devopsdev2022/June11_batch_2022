@@ -1,0 +1,21 @@
+#Maven Installation#
+
+#Install Java 
+apt install java-1.8.0-openjdk-devel -y
+
+#change to opt directory
+cd /opt/
+
+#check the directory path
+pwd    
+
+#Download and unzip the maven package 
+wget http://apachemirror.wuchna.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+tar -xvf apache-maven-3.6.3-bin.tar.gz
+
+#Set env variables
+export M2_HOME=/opt/apache-maven-3.6.3    
+export PATH=$PATH:$M2_HOME/bin
+
+#check the version
+mvn -version 

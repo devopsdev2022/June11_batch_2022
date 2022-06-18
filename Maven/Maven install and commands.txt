@@ -19,3 +19,23 @@ export PATH=$PATH:$M2_HOME/bin
 
 #check the version
 mvn -version 
+
+
+
+
+Creating a new Project (war)
+
+mvn archetype:generate -DgroupId=<Artifact Group> -DartifactId=<Artifact ID> -DarchetypeArtifactId=maven-archetype-webapp
+
+Eg1: 
+mvn archetype:generate -DgroupId=com.qshore.web -DartifactId=webapp -DarchetypeArtifactId=maven-archetype-webapp
+
+
+
+Creating a new Project (jar)
+
+mvn archetype:generate -DgroupId=<Artifact Group> -DartifactId=<Artifact ID>
+
+Example:
+Eg2: 
+mvn archetype:generate -DgroupId=de.focusdv.bcs -DartifactId=new-app

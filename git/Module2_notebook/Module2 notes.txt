@@ -1,16 +1,16 @@
-Initiate a got repo
+Initiate a git repo
 
-Git init
+git init
 
 Note : create some files and add some content in that 
 
 Check every step using
 
-Git status 
+git status 
 
 Add the code to git
 
-Git add .
+git add .
 
 Commit the code to git (staging area)
 
@@ -20,16 +20,22 @@ eg: git commit -m “adding some files”
 
 If error comes :
 
-Got config user.email <email>
-Git confer user.name <name>
+git config user.email <email>
+git confer user.name <name>
 
 
 Push the code
-Git push origin master
+git push origin master
 
 Error comes
 
-1. Check the branch 
+1. Check the branch name 
 
-2. Check the remote repository  Git remote -v
-Git remote add origin <url> 
+2. Check the remote repository  
+
+git remote -v
+
+if there is no repository as origin 
+
+git remote add origin <url of the remote repository >
+

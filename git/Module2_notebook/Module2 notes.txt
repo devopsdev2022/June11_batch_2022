@@ -1,35 +1,79 @@
-Initiate a got repo
+#install git 
 
-Git init
+apt install git -y
 
-Note : create some files and add some content in that 
+#Initiate a git repo
 
-Check every step using
+git init
 
-Git status 
+###Note : create some files and add some content in that 
 
-Add the code to git
+#Check every step using
 
-Git add .
+git status 
 
-Commit the code to git (staging area)
+#Add the code to git
 
-Format: git commit -m “<a message summarises your commit>”
+git add .
+
+#Commit the code to git (staging area)
+
+#Format: git commit -m “<a message summarises your commit>”
 
 eg: git commit -m “adding some files”
 
-If error comes :
+#If error comes :
 
-Got config user.email <email>
-Git confer user.name <name>
+git config user.email <email>
+git confer user.name <name>
 
 
-Push the code
-Git push origin master
+#Push the code
+git push origin master
 
-Error comes
+##Error comes
 
-1. Check the branch 
+1. Check the branch name 
 
-2. Check the remote repository  Git remote -v
-Git remote add origin <url> 
+2. Check the remote repository  
+
+git remote -v
+
+#if there is no repository as origin 
+
+git remote add origin <url of the remote repository >
+
+#usage of .gitignore - add the file name to .gitignore file
+
+eg: echo "firstfile.txt" > .gitignore
+
+#stash commands
+
+
+git stash  #placing the tracked files in stash
+git stash -u #placing the untracked and tracked files in stash
+
+git stash pop #Takes the files in a stash, places them back into the development workspace and deletes the stash from history
+git stash pop <stash id> #Takes the files in a specific stash id, places them back into the development workspace and deletes the stash from history
+
+
+git stash list #Displays the stash history in chronological order; and
+
+
+git stash clear: Removes all entries in the git stash history.
+
+#checking the log
+
+git log
+
+#checking the log (shorter version)
+
+git log --oneline
+
+#change last commit message
+
+git commit --amend -m "an updated commit message"
+
+
+
+

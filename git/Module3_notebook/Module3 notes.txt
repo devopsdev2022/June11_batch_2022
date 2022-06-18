@@ -1,35 +1,56 @@
-Initiate a got repo
+#Branching & Merging
 
-Git init
+#List branches (the asterisk denotes the current branch)
+git branch	
 
-Note : create some files and add some content in that 
+#List all branches (local and remote)
+git branch -a
 
-Check every step using
+#Create a new branch
+git branch [branch name]	
 
-Git status 
+#Delete a branch
+git branch -d [branch name]	
 
-Add the code to git
+#Create a new branch and switch to it
+git checkout -b [branch name]	
 
-Git add .
+#Clone a remote branch and switch to it
+git checkout -b [branch name] origin/[branch name]	
 
-Commit the code to git (staging area)
+#Rename a local branch
+git branch -m [old branch name] [new branch name]	
 
-Format: git commit -m “<a message summarises your commit>”
-
-eg: git commit -m “adding some files”
-
-If error comes :
-
-Got config user.email <email>
-Git confer user.name <name>
+#Switch to a branch
+git checkout [branch name]	
 
 
-Push the code
-Git push origin master
+#check the diff between two branches 
+git diff <branch> <branch2>
 
-Error comes
+#	Merge a branch into the active branch
+git merge [branch name]
 
-1. Check the branch 
+#Merge a branch into a target branch
+git merge [source branch] [target branch]	
 
-2. Check the remote repository  Git remote -v
-Git remote add origin <url> 
+Fetch and pull
+
+#fetch the changes to .git repo
+git fetch
+
+#fetch changes to .git repo of specific branch
+git fetch origin <branch name>
+
+#pull the changes to working repo
+git pull
+
+#pull changes to working repo of specific branch
+git pull origin <branch name>
+
+
+#	rebase a branch into the active branch
+git rebase [branch name]
+
+#rebase a branch into a target branch
+git rebase [source branch] [target branch]	

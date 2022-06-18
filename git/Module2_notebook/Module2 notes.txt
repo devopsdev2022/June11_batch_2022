@@ -1,0 +1,35 @@
+Initiate a got repo
+
+Git init
+
+Note : create some files and add some content in that 
+
+Check every step using
+
+Git status 
+
+Add the code to git
+
+Git add .
+
+Commit the code to git (staging area)
+
+Format: git commit -m “<a message summarises your commit>”
+
+eg: git commit -m “adding some files”
+
+If error comes :
+
+Got config user.email <email>
+Git confer user.name <name>
+
+
+Push the code
+Git push origin master
+
+Error comes
+
+1. Check the branch 
+
+2. Check the remote repository  Git remote -v
+Git remote add origin <url> 

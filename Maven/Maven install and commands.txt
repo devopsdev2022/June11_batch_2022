@@ -28,6 +28,11 @@ apt install maven
 
 
 ------
+#Install tree tool
+
+apt install tree -y
+
+------
 
 
 

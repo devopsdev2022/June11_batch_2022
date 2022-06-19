@@ -1,7 +1,7 @@
 #Maven Installation#
 
 #Install Java 
-apt install java-1.8.0-openjdk-devel -y
+sudo apt-get install openjdk-8-jdk -y
 
 #change to opt directory
 cd /opt/

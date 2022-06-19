@@ -21,6 +21,14 @@ export PATH=$PATH:$M2_HOME/bin
 mvn -version 
 
 
+----------
+apt update -y
+
+apt install maven
+
+
+------
+
 
 
 Creating a new Project (war)

@@ -11,73 +11,25 @@ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key 
 
 
 #And add the repository to your system with:\
-\
-\
-\
-\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls3\ilvl0
-\f2\fs36 \cf2 \expnd0\expndtw0\kerning0
-\
-\ls3\ilvl0
-\f1 \cb4 \kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
+
 sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-\f2 \cb1 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
-\
-\
+
 #Once the repository is enabled, install the latest stable version of Jenkins by typing:\
-\
-\
-\
-\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls4\ilvl0
-\f1\fs36 \cf2 \cb4 {\listtext	5	}\expnd0\expndtw0\kerning0
-sudo apt-get update
-\f2 \cb1 \
-\ls4\ilvl0
-\f1 \cb4 \kerning1\expnd0\expndtw0 {\listtext	6	}\expnd0\expndtw0\kerning0
-sudo apt-get install jenkins
-\f2 \cb1 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
-\
-\
+sudo apt-get update
+sudo apt-get install jenkins
+
 #After the installation process is completed, start the Jenkins service with:\
-\
-\
-\
-sudo systemctl start jenkins\
-\
-\
-\
+
+sudo systemctl start jenkins
+
 #To check whether it started successfully run:\
-\
-\
-\
-systemctl status jenkins\
-\
-\
-\
-#Finally enable the Jenkins service to start on system boot.\
-\
-\
-\
-sudo systemctl enable jenkins\
-\
-\
-\
-\
-\
-#check with ip:8080 to see the jenkins UI\
-\
-\
-\
-\
-\
-\
-Create a job :\
-\
-Jenkins home page \'97> }
+
+systemctl status jenkins
+
+#Finally enable the Jenkins service to start on system boot.
+
+sudo systemctl enable jenkins
+
+#check with ip:8080 to see the jenkins UI

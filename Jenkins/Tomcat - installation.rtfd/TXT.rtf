@@ -1,0 +1,319 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\fswiss\fcharset0 ArialMT;\f4\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red170\green38\blue28;\red255\green255\blue255;\red52\green52\blue52;
+\red255\green255\blue255;\red255\green255\blue255;\red158\green158\blue158;\red11\green13\blue25;\red249\green217\blue36;
+\red246\green246\blue246;\red208\green254\blue47;\red83\green200\blue46;}
+{\*\expandedcolortbl;;\cssrgb\c72941\c22353\c14510;\cssrgb\c100000\c100000\c100000;\cssrgb\c26667\c26667\c26667;
+\cssrgb\c100000\c100000\c100000\c80000;\cssrgb\c100000\c100000\c100000\c30196;\cssrgb\c68235\c68235\c68235;\cssrgb\c4706\c6275\c12941;\cssrgb\c98431\c87059\c17647;
+\cssrgb\c97255\c97255\c97255;\cssrgb\c84706\c98039\c23529;\cssrgb\c38039\c80784\c23529;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\deftab720
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 How to Install Apache Tomcat Server on Ubuntu 22.04\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 To install\'a0
+\f2\b Apache Tomcat Server
+\f1\b0 \'a0on\'a0
+\f2\b Ubuntu 22.04
+\f1\b0 , you must follow the below-given step-by-step instructions.
+\f3\fs32 \cf5 \cb6 \strokec5 \
+\
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 Step 1: Update system repositories\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs33\fsmilli16800 \cf7 \cb8 \strokec7 $\'a0\cf9 \strokec9 sudo\cf10 \strokec10 \'a0apt update\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb1 \strokec4 {{\NeXTGraphic word-image-3.png \width16340 \height6860 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 Step 2: Installation of Java\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 Before jumping into the installation of Apache Tomcat Server, it is essential to have \'93
+\f2\b Java
+\f1\b0 \'94 on your system. For this purpose, execute the following command to install \'93
+\f2\b OpenJDK 11
+\f1\b0 \'94:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf7 \cb8 \strokec7 $\'a0\cf9 \strokec9 sudo\cf10 \strokec10 \'a0apt\'a0\cf9 \strokec9 install\cf10 \strokec10 \'a0openjdk-\cf11 \strokec11 11\cf10 \strokec10 -jdk\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb1 \strokec4 {{\NeXTGraphic word-image-5.png \width18200 \height11680 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 {{\NeXTGraphic word-image-7.png \width16620 \height11620 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 Then, verify the version of the installed Java:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf7 \cb8 \strokec7 $\'a0\cf9 \strokec9 java\cf10 \strokec10 \'a0version\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb1 \strokec4 {{\NeXTGraphic word-image-9.png \width16620 \height6420 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 Step 3: Check the availability of Apache Tomcat package\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 After fulfilling the requirements,\'a0
+\f2\b check\'a0
+\f1\b0 the\'a0
+\f2\b availability\'a0
+\f1\b0 of the\'a0
+\f2\b Apache Tomcat package\'a0
+\f1\b0 in the repository:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf7 \cb8 \strokec7 $\'a0\cf9 \strokec9 sudo\cf10 \strokec10 \'a0\cf9 \strokec9 apt-cache search\cf10 \strokec10 \'a0tomcat\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb3 \strokec4 The given output signifies that the \'93
+\f2\b tomcat9
+\f1\b0 \'94\'a0
+\f2\b package\'a0
+\f1\b0 for download:\
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb1 {{\NeXTGraphic word-image-13.png \width16500 \height11460 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 Step 4: Install Apache Tomcat Server on Ubuntu 22.04\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 After finding the required\'a0
+\f2\b Apache Tomcat\'a0
+\f1\b0 package, we will install it on\'a0
+\f2\b Ubuntu 22.04
+\f1\b0 \'a0with the help of the below-given command:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf7 \cb8 \strokec7 $\'a0\cf9 \strokec9 sudo\cf10 \strokec10 \'a0apt\'a0\cf9 \strokec9 install\cf10 \strokec10 \'a0tomcat9 tomcat9-admin\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb1 \strokec4 {{\NeXTGraphic word-image-14.png \width16640 \height11540 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 Press \'93
+\f2\b y
+\f1\b0 \'94 to permit the installation for a few minutes:\
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb1 {{\NeXTGraphic word-image-16.png \width16620 \height11280 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 Step 5: Check ports for Apache Tomcat Server\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 On Ubuntu 22.04, the Apache Tomcat Server\'a0
+\f2\b automatically\'a0
+\f1\b0 starts\'a0
+\f2\b working\'a0
+\f1\b0 after completing the\'a0
+\f2\b installation
+\f1\b0 . To validate this operation, you can utilize the \'93
+\f2\b ss
+\f1\b0 \'94 command for displaying the network socket related information:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf7 \cb8 \strokec7 $\'a0\cf10 \strokec10 ss\'a0-ltn\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb3 \strokec4 The default port for the Apache Tomcat server is \'93
+\f2\b 8080
+\f1\b0 \'94 and it can be seen in the following output that port \'93
+\f2\b 8080
+\f1\b0 \'94 is listening for all incoming connections:\
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb1 {{\NeXTGraphic word-image-18.png \width16580 \height7040 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 Step 6: Open ports for Apache Tomcat Server\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 In case if the UFW firewall is activated on your system, then it may cause trouble while connecting external devices. So, to permit the incoming from any type of source to port \'93
+\f2\b 8080
+\f1\b0 \'94, write out the following \'93
+\f2\b ufw
+\f1\b0 \'94 command:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf9 \cb8 \strokec9 sudo\cf10 \strokec10 \'a0ufw allow from any to any port\'a0\cf11 \strokec11 8080\cf10 \strokec10 \'a0proto tcp\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb1 \strokec4 {{\NeXTGraphic word-image-20.png \width16520 \height5780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 Step 7: Test working of Apache Tomcat Server\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 If you have carefully followed all of the previous given, then at this point, the Apache Tomcat Server should be running on Ubuntu 22.04. To test its working specify your system loopback address with the number of the opened port for\'a0
+\f2\b Apache Tomcat Server
+\f1\b0 :\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf10 \cb8 \strokec10 http://127.0.0.1:\cf11 \strokec11 8080\cf10 \strokec10 \
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb1 \strokec4 {{\NeXTGraphic word-image-22.png \width19380 \height11100 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 How to use Apache Tomcat Web Application Manager on Ubuntu 22.04\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 Before using Apache Tomcat Web application manager, it is required to set up a new Tomcat user.\
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \strokec2 Step 1: Creating Tomcat user\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 Firstly, open up the \'93
+\f2\b tomcat-users.xml
+\f1\b0 \'94 file in the \'93
+\f2\b nano
+\f1\b0 \'94 editor:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf7 \cb8 \strokec7 $\'a0\cf9 \strokec9 sudo\cf10 \strokec10 \'a0\cf9 \strokec9 nano\cf10 \strokec10 \'a0/etc/tomcat9/tomcat-users.xml\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb1 \strokec4 {{\NeXTGraphic word-image-24.png \width16580 \height6120 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 Your \'93
+\f2\b tomcat-users.xml
+\f1\b0 \'94 file will somehow look like this:\
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb1 {{\NeXTGraphic word-image-27.png \width16500 \height11620 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 Now, paste the following lines in the opened \'93
+\f2\b tomcat-users.xml
+\f1\b0 \'94 file to create a new user named \'93
+\f2\b tomcat
+\f1\b0 \'94 with the password \'93
+\f2\b helloworld
+\f1\b0 \'94 having \'93
+\f2\b admin-gui
+\f1\b0 \'94 and \'93
+\f2\b manager-gui
+\f1\b0 \'94 roles:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf10 \cb8 \strokec10 <role\'a0\cf9 \strokec9 rolename\cf10 \strokec10 =\cf12 \strokec12 "admin-gui"\cf10 \strokec10 />\cb1 \
+\
+\cb8 <role\'a0\cf9 \strokec9 rolename\cf10 \strokec10 =\cf12 \strokec12 "manager-gui"\cf10 \strokec10 /gt;\cb1 \
+\
+\cb8 <user\'a0\cf9 \strokec9 username\cf10 \strokec10 =\cf12 \strokec12 "tomcat"\cf10 \strokec10 \'a0\cf9 \strokec9 password\cf10 \strokec10 =\cf12 \strokec12 "pass"\cf10 \strokec10 \'a0\cf9 \strokec9 roles\cf10 \strokec10 =\cf12 \strokec12 "admin-gui,manager-gui"\cf10 \strokec10 />\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb3 \strokec4 Press \'93
+\f2\b Ctrl+O
+\f1\b0 \'94 to save the added changes:\
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb1 {{\NeXTGraphic word-image-30.png \width16560 \height11600 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 Step 2: Restart Tomcat Server\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 After creating a Tomcat account, restart the Apache Tomcat Server:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf7 \cb8 \strokec7 $\'a0\cf9 \strokec9 sudo\cf10 \strokec10 \'a0systemctl restart tomcat9\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb1 \strokec4 {{\NeXTGraphic word-image-31.png \width16540 \height5300 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 \strokec2 Step 3: Open Tomcat Web Application Manager\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\b0\fs36\fsmilli18286 \cf4 \strokec4 Lastly, navigate to the following link for accessing the Tomcat Web Application Manager. You will be asked to input the credentials for accessing the created user account:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16800 \cf10 \cb8 \strokec10 http://127.0.0.1:\cf11 \strokec11 8080\cf10 \strokec10 /manager/html\
+\pard\pardeftab720\sa600\partightenfactor0
+
+\f1\fs36\fsmilli18286 \cf4 \cb3 \strokec4 Enter the \'93
+\f2\b username
+\f1\b0 \'94 and \'93
+\f2\b password
+\f1\b0 \'94 which you have specified in the \'93
+\f2\b tomcat-users.xml
+\f1\b0 \'94 file and click \'93
+\f2\b Sign in
+\f1\b0 \'94:\
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb1 {{\NeXTGraphic word-image-32.png \width18680 \height11900 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 Congratulations! Now you can now access the Tomcat Web Application Manager via the tomcat user account:\
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb1 {{\NeXTGraphic word-image-33.png \width19460 \height12480 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sa600\partightenfactor0
+\cf4 \cb3 We have compiled the method to install Apache Tomcat Server and use its application manager on Ubuntu 22.04.\
+}

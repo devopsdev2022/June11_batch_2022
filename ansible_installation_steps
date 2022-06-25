@@ -29,5 +29,31 @@ vi authorized_keys
 
 ####go to master###
 
+ssh root@<agentip>
+
+#open or create a inventory file
+
+mkdir /etc/ansible
+
+#make a group and copy the ip into this file
+
+vi /etc/ansible/hosts
+
+#write as below
+
+[agents]
+<agent public ip>
+
+example:
+
+[myagents]
+172.7.0.2
+
+#ping the agent using the ping module
+
+ansible -m ping all
+
+
+
 
 

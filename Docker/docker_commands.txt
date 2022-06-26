@@ -1,0 +1,116 @@
+1. docker search
+#We can use the command docker search to search for public images on the Docker hub. It will return information about the image name, description, stars, official and automated.
+If you prefer a GUI-based search option, use the Docker Hub website.
+
+
+docker search MySQL
+
+
+
+2. docker pull
+Now that we know the name of the image, we can pull that from the Docker hub using the command docker pull. Here, we are setting the platform option as well.
+
+docker pull ubuntu
+
+3. docker images
+command to list all the local images.
+
+
+docker images
+
+
+4. docker run
+Run the docker image mentioned in the command. This command will create a docker container in which the Apache HTTP server will run. Moreover, we can use the --name option to assign a name to the container. Docker will randomly assign a name if we don’t provide one.
+
+
+docker run -it ubuntu bash
+docker run -dt http
+
+5. docker ps
+We can list all the running containers by using the following command.
+
+docker ps
+
+How about listing all the containers, including stopped once? We can do that by adding --all option.
+
+docker ps --all
+
+6. docker stop
+To stop a container, use the docker stop command with either the container id or container name. We may stop a container if we want to change our docker run command.
+
+docker stop <container id>
+7. docker restart
+Let’s restart our stopped contained by using the following command. We may want to use this after we reboot our machine.
+
+docker restart <container id>
+
+8. docker rename
+change the name to keep track of our containers more easily.
+
+docker rename <existing-name> <new_name>
+
+9. docker exec
+Access the docker container and run commands inside the container. I am accessing the apache server container in this example.
+
+docker exec -it <container id> bash
+
+10. docker logs
+This command is helpful to debug our Docker containers. It will fetch logs from a specified container.
+docker logs <container name>
+
+
+11. docker rm
+In case we want to remove a container, we can use the following command.
+
+docker rm <container name>
+
+You may encounter an error like
+Error response from daemon: You cannot remove a running container ……… Stop the container before attempting removal or force remove
+As it recommends, we can stop the container first and then remove it or use option -f to remove a running container forcefully.
+
+docker stop <container name>
+
+docker rm test_db
+
+# or
+docker rm -f test_db
+
+
+12. docker rmi
+
+use the docker rmi command with the image id to remove an image.
+docker rmi <image name>
+
+
+13. Docker restart
+
+
+Restart the docker container with container id 
+
+docker restart <container id>
+
+
+14. Docker start
+
+This command in docker starts the docker container with container id 
+
+docker start <container id>
+
+
+15. Docker commit
+
+Save a new docker image with container id mentioned in the command on the local system. 
+
+docker commit <comtainer id> <image name> 
+
+16.docker login
+
+Login into docker hub. You will be asked your docker hub credentials to log in.
+
+docker login
+
+17. Docker push 
+Upload a docker image with the image name mentioned in the command on the dockerhub.
+
+docker push <image name>
+

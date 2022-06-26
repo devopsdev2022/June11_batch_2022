@@ -1,0 +1,45 @@
+
+Create a directory
+
+---
+- name: Creating directory
+  hosts: all
+  tasks:
+         - name: create dir
+           file:
+                name: /tmp/newdir
+                state: directory
+                
+                
+
+Installing tree using playbook
+
+---
+- name: Installing tree
+  hosts: all
+  tasks:
+         - name: tree installations
+           yum:
+                name: tree
+                state: present
+
+Check the syntax 
+ansible-playbook playbook.yml --syntax --check 
+
+
+Create a dir and copy the password 
+
+---
+- name: Creating dir and copy the file content
+  hosts: all
+  tasks:
+         - name: create dir
+           file:
+                name: /tmp/newdir
+                state: directory
+         - name: copy file content
+           copy:
+                 src: /tmp/txt1
+                 dest: /tmp/newdir/txt2
+
+

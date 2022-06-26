@@ -1,0 +1,37 @@
+Important modules in Ansible:
+1.command
+cmd :
+ansible all/ipaddress/group -m module -name -a ' name:  '
+
+ansible all -m command -a 'll'
+
+2.shell
+ansible all -m shell -a 'sh get-script.sh'
+
+3.ping
+ansible all -m ping
+4.copy - copy into manged nodes
+ansible all -m copy -a 'src=/etc/password dest=/tmp mode=777 owner=root ' -b
+5.fetch - copy from manged nodes into controler
+ansible all -m fetch -a 'src=/etc/password dest=/tmp' -b
+6.file - delete or create
+ansible all -m file -a 'name=/file1 state=absent' -b
+7.start - detailed info abt file
+ansible all -m start -a 'path=/file1' 
+8.replace
+ansible all -m replace -a ‘path=/etc/tomcat/server.xml regexp=’8080’ replace=’9090’’ -b
+9.debug
+10.user
+ansible all -m user -a 'name=user1 password=pswd1' -b
+11.apt
+ansible testagents -m apt -a 'name=git state=present' -e ansible_python_interpreter=/usr/bin/python3
+12.yum
+ansible all -m yum -a 'name=httpd state=present' -b
+13.service
+ansible all -m service -a 'name=httpd state=restarted' -b
+14.url
+ansible all -m url -a 'url=google.com status=200'
+15.ec2
+16.docker-image
+17.docker-container
+18.docker-login
